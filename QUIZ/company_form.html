@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            list-style: none;
+        }
+        .person{
+            display: inline-block;
+            width: 60px;
+        }
+        li {
+            line-height: 30px;  
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>프론트엔드 개발자 지원서</h1>
+    <span>HTML1, CSS, jacascript에 대한 기술적 이해와 경험이 있는 분을 찾습니</span><br>
+    <span>다</span>
+    <hr>
+    <!-- 짜피 아직 서버 없어서 대충해도 됨 -->
+    <form action="#">
+        <h3>개인정보</h3>
+        <ul>
+            <li>
+                <label for="name" class = "person">이름</label>
+                <input type="text" id="name" name="name" placeholder="공백없이 입력하세요." required>
+            </li>
+            <li>
+                <label for="phone" class = "person">연락처</label>
+                <input type="text" id="phone" name="phone">
+            </li>
+        </ul>
+    
+        <h3>지원분야</h3>
+        <ul>
+            <li>
+                <input type="radio" id = "skill1" name = "skillname">
+                <label for = "skill1">웹 퍼블리싱</label>
+            </li>
+            <li>
+                <input type="radio" id = "skill2" name = "skillname">
+                <label for = "skill2">웹 애플리케이션 개발</label>
+            </li>
+            <li>
+                <input type="radio" id = "skill3" name = "skillname">
+                <label for = "skill3">개발 환경 개선</label>
+            </li>
+        </ul>
+    
+        <h3>지원 동기</h3>
+        <textarea id="note" rows="7" cols="60" maxlength="60" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea><br>
+    
+
+        <!-- submit : 사용자가 입력한 데이터를 서버에 전송하는 버튼 -->
+        <input type="submit" value="접수하기">
+        <!-- reset : 폼 초기화 -->
+        <input type="reset" value="다시 쓰기">
+    </form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset{
+            /* 큰 태그의 사이의 틈 추가 */
+            margin-bottom: 40px;
+        }
+
+        legend{
+            /* 메인 글 크기 수정 */
+            font-size: 20px;
+            font-weight: bold;
+        }
+        ul{
+            /* 안에 있는 문자 삭제 */
+            list-style: none;
+        }
+        li{
+            /* 각 항목의 높이를 30만큼 함 */
+            line-height: 30px;
+        }
+        /* 클래스 선택자(.)를 선언해서 사용 */
+        .infomation {
+            /* 라벨의 크기를 100으로 함 
+                인라인 속성을 강제로 가지게 함
+            */
+            float: left; /* display: inline-block; + 왼쪽정렬 */
+            width: 50px;
+        }
+        #btn1{
+            background-color: rgb(0, 255, 0); /* 배경색 */
+            color: white; /* 글자색 */
+            margin-right: 30px; /* 오른쪽 여백 */
+        }
+        #btn2{
+            background-color: rgb(255, 0, 0); /* 배경색 */
+            color: white; /* 글자색 */
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+    
+    <h3>귤 주문하기</h3>
+    <form action = "">
+<fieldset>
+    <legend>상품선택</legend>
+    <p>
+        <b>
+            주문할 상품을 선택해주세요
+        </b>
+    </p>
+    <ul>
+        <li>   
+            <input type="checkbox" id = "check1">
+            <label for = "check1"> 선물용 3KG </label>
+            <input type="number" min = "0" max = "5">개<small>(최대 5개)</small>
+        </li>
+        <li>
+            <input type="checkbox" id = "check2">
+            <label for = "check2"> 선물용 5KG </label>
+            <input type="number" min = "0" max = "3">개<small>(최대 3개)</small>
+        </li>
+    </ul>
+
+    <p> <b> 포장 선택 </b></p>
+    <ul>
+        <li>
+            <input type="radio" id = "gift1" name = "pack">
+            <label for = "gift1"> 일반 포장 </label>
+        </li>
+        <li>
+            <input type="radio" id = "gift2" name = "pack">
+            <label for = "gift2"> 선물 포장 </label>
+        </li>
+    </ul>
+</fieldset>
+
+<fieldset>
+    <legend>배송 정보</legend>
+    <ul>
+        <li>
+            <label class="infomation" for="name">이름</label>
+            <input type="text" id = "name" placeholder="이름을 입력해주세요" required>
+        </li>
+        <li>
+            <label class="infomation"  for="address">배송지</label>
+            <input type="text" id = "address" placeholder="배송지를 입력해주세요" required>
+        </li>
+        <li>
+            <label class="infomation" for="day">배송일</label>
+            <input type="date" id="day">
+        </li>
+        <li>
+            <label class="infomation"  for="note">메모</label>
+            <textarea id="note" rows="5" cols="30" placeholder="배송시 요청사항을 입력해주세요"></textarea>
+        </li>
+    </ul>
+</fieldset>
+<button type="submit" id = "btn1">주문하기</button>
+<button type="reset" id = "btn2">주문취소</button>
+    </form>
+
+</body>
+</html>

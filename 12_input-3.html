@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>
+    <!-- 라벨은 이름표같은 것 -->
+    <!-- for: 라벨과 입력필드를 연결. 라벨을 클릭하면 입력필드에 포커스 -->
+    <label for="id">아이디</label>
+    <!-- id, class : 태그의 이름 -->
+    <!-- id : 중복불가 class 중복가능 -->
+    <input type="checkbox" id = "id">
+
+    <label for="password">비밀번호</label>
+    <input type="checkbox" id = "password"> <!-- 비밀번호가 체트됨 -->
+</p>
+
+<h3>라디오버튼</h3>
+<p>
+    <!-- name으로 같은 값으로 묶어주면 하나의 그룹이 됨 -->
+    <label for="hobby1">축구</label>
+    <input type="radio" id="hobby1" name = "hobby">
+
+    <label for="hobby2">야구</label>
+    <input type="radio" id="hobby2" name="hobby" checked>
+
+    <label for="hobby3">축구</label>
+    <input type="radio" id="hobby3" name="hobby">
+</p>
+</body>
+</html>
+
+
+<!--
+다중으로 선택할 때는 checkbox
+하나만 선택할 때는 radio
+
+
+-->

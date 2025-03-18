@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style: none;
+        }
+        /* 항목 높이 변경 */
+        li{
+            line-height: 30px;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h3>회원가입폼2</h3>
+    <!-- action과 method: 데이터를 전송할 서버의 주소 -->
+    <form action = "localhost:8080.register" method="POST">
+        <fieldset>
+            <legend>사용자 정보</legend> <!-- 필드셋 제목 -->
+            <ul>
+                <li>
+                <label for="id">아이디</label>
+                <!-- 화면이 열릴때 자동으로 포커스됨 (autofocus) -->
+                <input type="text" id="id" autofocus placeholder="4~10자 사이, 공백없이 입력"
+                name = "user_id" required>
+                <!-- required : is not null 같은거 비어있으면 실행이 안됨 -->
+            </li>
+
+
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name = "user_mail" required>
+                </li>
+
+
+                <li>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw" 
+                    placeholder="문자와 숫자, 특수문자가 포함되어있어야 합니다."
+                    name = "user_pw" required>
+                </li>
+            </ul>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>약관동의</legend>
+            <span>이벤트와 새로운 소식을 받으시겠습니까?</span> <br>
+
+            <input type="radio" id = mail_y name = mail>
+            <label for="mail_y">수신하기</label>
+            <input type="radio" id = mail_n name = mail checked>
+            <label for="mail_n">거절하기</label>
+
+        </fieldset>
+
+        <!-- submit : 사용자가 입력한 데이터를 서버에 전송 -->
+    <input type="submit" value="가입하기">
+    <input type="reset" value="가입취소">
+</body>
+</html>

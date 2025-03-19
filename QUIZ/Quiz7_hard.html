@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        th{
+            border: 1px solid gray;
+            /* 위아래 오른쪽왼쪽 */
+            padding: 20px 50px;
+            background-color: gainsboro;
+        }
+        td{
+            border: 1px solid gray;
+            /* 위아래 오른쪽왼쪽 */            
+            padding: 20px 50px;
+
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        img {
+            width: 120px;
+            height: 125px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>쇼핑몰 상품 목록</h2>
+
+    <table>
+        <!-- 제목 -->
+
+        <thead>
+            <tr>
+                <th>상품 이미지</th>
+                <th>상품명</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+
+
+
+<!-- 메인 내용들 -->
+        <tbody>
+            <!-- 이미지는 img 태그를 사용해서 넣었음 -->
+            <tr>
+                <td>
+                    <img src="../img/생수.jpg" alt="생수" width="50px">
+                </td>
+                <td>
+                    <!-- 하이퍼링크는 그냥 넣음 -->
+                    <a href="./water.html">생수</a>
+                </td>
+                <!-- 택스트, 택스트이다. -->
+                <td>1000원</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../img/커피.jpg" alt="커피" width="50px">
+                </td>
+                <td>
+                    <a href="./coffee.html">커피</a>
+                </td>
+                <td>19000원</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../img/시리얼.jpg" alt="시리얼" width="100px">
+                </td>
+                <td>
+                    <a href="./seereal.html">시리얼</a>
+                </td>
+                <td>10000원</td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+</body>
+</html>

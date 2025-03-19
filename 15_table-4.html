@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            /* 테이블에 간격을 줌 */
+            border-collapse: separate;
+        }
+        th, td {
+            border: 1px solid gray;
+            /* 위아래 오른쪽왼쪽 */
+            padding:0px;
+            width: 100px;
+            height: 40px;
+        }
+        #center {
+            text-align: center;
+        }
+        #left {
+            text-align: left;
+        }
+        #right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>텍스트 정렬</h3>
+
+    <table>
+        <thead>
+            <th>좌측정렬</th>
+            <th>중앙정렬</th>
+            <th>우측정렬</th>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td id="left">apple</td>
+                <td id="center">banana</td>
+                <td id="right">cheey</td>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table>
+</body>
+</html>

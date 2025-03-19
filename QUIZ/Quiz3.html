@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        th {
+            border: 1px solid gray;
+            background-color: gainsboro;
+            /* 위아래 오른쪽왼쪽 */
+            padding: 10px 20px;
+        }
+        td{
+            border: 1px solid gray;
+            /* 위아래 오른쪽왼쪽 */
+            padding: 10px 20px;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #sum{
+            background-color: gainsboro;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>도서 관리 시스템</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>도서명</th>
+                <th>저자</th>
+                <th>출판사</th>
+                <th>출판연도</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>책 제목1</td>
+                <td>저자1</td>
+                <td>출판사 1</td>
+                <td>2022</td>
+            </tr>
+
+            <tr>
+                <td>책 제목2</td>
+                <td>저자2</td>
+                <td>출판사 2</td>
+                <td>2020</td>
+            </tr>
+
+            <tr>
+                <td>책 제목3</td>
+                <td>저자3</td>
+                <td>출판사 3</td>
+                <td>2023</td>
+            </tr>
+
+            <tr>
+                <td id = "sum">총 권수</td>
+                <td colspan="3">3권(합계)</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

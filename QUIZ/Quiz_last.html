@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header, main, footer{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        #main{
+            /* main div의 자식들을 가로로 정렬 */
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+
+        th{
+            border: 1px solid gray;
+            padding: 5px 5px;
+        }
+        td{
+            border: 1px solid gray;
+            padding: 3px 3px;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>영화 리뷰 페이지</h3>
+        <ul>
+            <li>
+                <a href="./select.html">홈</a>
+            </li>
+            <li>
+                <a href="./select.html">영화 목록</a>
+            </li>
+            <li>
+                <a href="./select.html">문의하기</a>
+            </li>
+        </ul>
+    </header>
+
+    <main id="main">
+        <section>
+            <h3>영화정보</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>제목</th>
+                        <th>감독</th>
+                        <th>개봉 연도</th>
+                        <th>평점</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>인셉션</td>
+                        <td>크리스토퍼 놀란</td>
+                        <td>2010</td>
+                        <td>90</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <section>
+            <h3>주요 출연진</h3>
+            <ul>
+                <li>레오나르도 다카프리오</li>
+                <li>조셉 고든 레빗</li>
+                <li>톰 하디</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="alert('리뷰가 작성되었습니다.')">리뷰 작성</button>
+
+        <p>ⓒ 2025 영화리뷰 사이트, 모든 권리 보유.</p>
+
+    </footer>
+</body>
+</html>

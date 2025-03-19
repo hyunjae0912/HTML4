@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        th{
+            border: 1px solid gray;
+            /* 위아래 오른쪽왼쪽 */
+            padding: 10px 20px;
+            background-color: gainsboro;
+        }
+        td{
+            border: 1px solid gray;
+            /* 위아래 오른쪽왼쪽 */
+            padding: 10px 20px;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #score{
+            background-color: gainsboro;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>학생 성적표</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>학생명</th>
+                <th>국어</th>
+                <th>수학</th>
+                <th>영어</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>김철수</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+            </tr>
+
+            <tr>
+                <td>이영희</td>
+                <td>78</td>
+                <td>82</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>박민수</td>
+                <td>92</td>
+                <td>95</td>
+                <td>89</td>
+            </tr>
+
+            <tr>
+                <td id="score">총점 및 평균</td>
+                <td>255<small>(평균:85)</small></td>
+                <td>267<small>(평균:89)</small></td>
+                <td>262<small>(평균:87)</small></td>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        #main{
+            /* main div의 자식들을 가로로 정렬 */
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 이런건 그냥 div인데 이름을 붙여서 직관적으로 정리해둠 -->
+    <header>헤더</header>
+    <nav>네비게이션</nav>
+    <main>메인
+        <section>컨텐츠1</section>
+        <section>컨텐츠2</section>
+    </main>
+    <footer>푸터</footer>
+</body>
+</html>
+
+
+
+<!--
+div는 블록요소
+요소들이 수직으로 정렬됨
+-->
+
+
+<!--
+시멘틱 태그 없이 div만 사용하면 의미를 해석하기 어렵다.
+
+시멘틱 태그는 태그 자체가 의미를 가지고 있어서 html 문서가 더 직관적이다.
+
+태그의 역할 :
+header : 로고, 소개, 검색창
+nav : 메뉴
+main : 주요 컨텐츠
+section : 세부 컨텐츠
+footer : 저작권 정보, 연락처, 사이트맵
+-->
